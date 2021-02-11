@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/* Обнуление*/
+/* отступы элементов - внешний, внутренний, границы */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* перерасчитывает размер блоков,  */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  /*box-sizing- Применяется для изменения алгоритма расчета ширины и высоты элемента 
+    Свойства width и height включают в себя значения полей и границ и внутр отступ, но не отступов (margin). */
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  /*размер текста */
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* прописываем для тегов форм наследовать свойство шрифта, тк они по умолчанию этого не делают */
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+/* псевдоэлемент инпут, который в браузере интерент эксплорер убирает крестик в поле ввода */
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* убирает в Мозиле в кнопках лишние отступы и границы */
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* Отменяет работу псевдоклассов ссылок (при наведении на ссылку и переходе по ней */
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/*Отменяет все эффекты, в том числе и подчеркивания у ссылок, которое задано по умолчанию. */
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------------------------------*/
+body {
+  height: 100%;
+  background-color: #dfdfdf;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #000;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  padding: 30px 7% 30px;
+}
+
+.wrapper__header {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+}

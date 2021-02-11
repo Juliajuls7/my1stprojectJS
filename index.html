@@ -1,0 +1,87 @@
+<!--Сообщаем раузеру как обарбатывать данную страницу-->
+<!DOCTYPE html>
+<!--Оболочка дкумента;указываем язык содержимого-->
+<html lang="ru">
+<!--Заголовок страницу, контрейнер для дргих важных данных (не отображается на странице)-->
+
+<head>
+    <!--Кодировка страницы-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Заголовок страницы в браузере-->
+    <title>Мой первый проект Java Script</title>
+</head>
+<!--Отображаемое тело страницы-->
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper__header">
+            Репозиторий
+        </div>
+        <div class="container">
+            <div class="repository">
+                <ul class="repository__list">Пользователи:
+                    <li class="repository__list__user"></li>
+                    <li class="repository__list__user"></li>
+                    <li class="repository__list__user"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="add-block">
+            <form action="#" class="add-block__form" method="GET">
+                <div class="add-block__input">
+                    <input type="text" name="user-name">
+                    <input type="text" name="user-age">
+                </div>
+                <div class="add-block__button">
+                    <button class="button">
+                        Добавить пользователя
+                    </button>
+                </div>
+        </div>
+        <div class="delete-block">
+            <form action="#" class="delete-block__form" method="POST">
+                <div class="delete-block__input">
+                    <input type="text" name="user-id">
+                </div>
+                <div class="delete-block__button">
+                    <button class="button">
+                        Удалить пользователя
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="adult">
+            <div class="adult__header header">
+                Совершеннолетние пользователи:
+            </div>
+            <div class="adult__list">
+                <ul class="adult__list__items">
+                    <li class="adult__list__items__item"></li>
+                    <li class="adult__list__items__item"></li>
+                    <li class="adult__list__items__item"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="registration">
+            <div class="registration__header header">
+                Фильтр пользователей по дате регистрации
+            </div>
+            <div class="registration__input">
+                <input type="date" name="date">
+            </div>
+            <div class="registration__list">
+                <ul class="registration__users">
+                    <li class="registration__users__item"></li>
+                    <li class="registration__users__item"></li>
+                    <li class="registration__users__item"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
